@@ -4,20 +4,15 @@ const StyledNav = styled.nav`
   background-color: ${(props) => props.theme.blue};
   position: fixed;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 250px;
-  height: 100vh;
-`;
-
-const StyledNavTittle = styled.h1`
-  padding: 20px 0;
-  background-color: ${(props) => props.theme.darkBlue};
-  color: ${(props) => props.theme.white};
+  height: calc(100vh - 70px);
 `;
 
 const StyledNavList = styled.ul`
   list-style: none;
   padding: 0;
+  margin: 0;
 `;
 
 const StyledLi = styled.li`
@@ -35,4 +30,4 @@ const StyledLi = styled.li`
   }
 `;
 
-export { StyledNav, StyledNavTittle, StyledNavList, StyledLi };
+export { StyledNav, StyledNavList, StyledLi };

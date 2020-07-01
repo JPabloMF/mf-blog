@@ -1,19 +1,30 @@
 import React from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { theme } from '../utils/theme';
 
 import SideBar from '../components/sidebar';
+import ToolBar from '../components/toolbar';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #efefef;
+  }
+`;
+
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
-        <h1>Hello world!</h1>
-        <SideBar />
-      </div>
-    </ThemeProvider>
+    <>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <div className="App">
+          <ToolBar />
+          <SideBar />
+        </div>
+      </ThemeProvider>
+    </>
   );
 }
 

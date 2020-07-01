@@ -1,12 +1,11 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
 
-import { StyledNav, StyledNavTittle, StyledNavList, StyledLi } from './styles';
+import { StyledNav, StyledNavList, StyledLi } from './styles';
 
 const SideBar = () => {
   return (
     <StyledNav>
-      <StyledNavTittle>MF'S BLOG</StyledNavTittle>
       <StyledNavList>
         <StyledLi>
           <Icon name="home" />
