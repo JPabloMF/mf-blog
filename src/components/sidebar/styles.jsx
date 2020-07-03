@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledNav = styled.nav`
   background-color: ${(props) => props.theme.blue};
@@ -29,6 +29,16 @@ const StyledLi = styled.li`
     border-left: 5px solid ${(props) => props.theme.white};
     padding: 20px 15px;
   }
+  ${(props) =>
+    props.active
+      ? css`
+          background-color: ${(props) => props.theme.lightBlue};
+          border-left: 5px solid ${(props) => props.theme.white};
+        `
+      : css`
+          background-color: transparent;
+          border-left: none;
+        `};
 `;
 
 export { StyledNav, StyledNavList, StyledLi };
