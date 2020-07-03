@@ -4,8 +4,7 @@ import 'semantic-ui-css/semantic.min.css';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { theme } from '../utils/theme';
 
-import SideBar from '../components/sidebar';
-import ToolBar from '../components/toolbar';
+import Main from '../screens/main';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -20,8 +19,7 @@ function App() {
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <div className="App">
-          <ToolBar />
-          <SideBar />
+          <Main />
         </div>
       </ThemeProvider>
     </>

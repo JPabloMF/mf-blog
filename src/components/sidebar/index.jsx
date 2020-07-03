@@ -3,21 +3,21 @@ import { Icon } from 'semantic-ui-react';
 
 import { StyledNav, StyledNavList, StyledLi } from './styles';
 
-const SideBar = () => {
+const SideBar = ({ openMenu }) => {
   return (
-    <StyledNav>
+    <StyledNav openMenu={openMenu}>
       <StyledNavList>
         <StyledLi>
           <Icon name="home" />
-          Home
+          {openMenu && 'Home'}
         </StyledLi>
         <StyledLi>
           <Icon name="list ul" />
-          Topics
+          {openMenu && 'Topics'}
         </StyledLi>
         <StyledLi>
           <Icon name="book" />
-          Blogs
+          {openMenu && 'Blogs'}
         </StyledLi>
       </StyledNavList>
     </StyledNav>

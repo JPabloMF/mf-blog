@@ -5,8 +5,9 @@ const StyledNav = styled.nav`
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 250px;
+  width: ${(props) => (props.openMenu ? '250px' : '70px')};
   height: calc(100vh - 70px);
+  transition: 300ms;
 `;
 
 const StyledNavList = styled.ul`
