@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 /* Components */
 import SideBar from '../../components/sidebar';
 import ToolBar from '../../components/toolbar';
+import ContentWrapper from '../../components/contentWrapper';
 
 /* utils */
-import { isMobile } from "../../utils";
+import { isMobile } from '../../utils';
 
 const Main = (props) => {
   const [openMenu, setOpenMenu] = useState(isMobile.any() ? false : true);
@@ -17,8 +19,11 @@ const Main = (props) => {
 
   return (
     <div>
-      <ToolBar openMenu={openMenu} setOpenMenu={handleOpenMenu} />
-      <SideBar openMenu={openMenu} />
+      <Router>
+        <ToolBar openMenu={openMenu} setOpenMenu={handleOpenMenu} />
+        <SideBar openMenu={openMenu} />
+        <ContentWrapper openMenu={openMenu} />
+      </Router>
     </div>
   );
 };

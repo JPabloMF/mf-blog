@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 import { StyledNav, StyledNavList, StyledLi } from './styles';
 
@@ -10,18 +11,24 @@ const SideBar = ({ openMenu }) => {
   return (
     <StyledNav openMenu={openMenu}>
       <StyledNavList>
-        <StyledLi active={activeRoute('/Home')}>
-          <Icon name="home" />
-          {openMenu && 'Home'}
-        </StyledLi>
-        <StyledLi active={activeRoute('/Topics')}>
-          <Icon name="list ul" />
-          {openMenu && 'Topics'}
-        </StyledLi>
-        <StyledLi active={activeRoute('/Blogs')}>
-          <Icon name="book" />
-          {openMenu && 'Blogs'}
-        </StyledLi>
+        <Link to="/Home">
+          <StyledLi active={activeRoute('/Home')}>
+            <Icon name="home" />
+            {openMenu && 'Home'}
+          </StyledLi>
+        </Link>
+        <Link to="/Topics">
+          <StyledLi active={activeRoute('/Topics')}>
+            <Icon name="list ul" />
+            {openMenu && 'Topics'}
+          </StyledLi>
+        </Link>
+        <Link to="/Blogs">
+          <StyledLi active={activeRoute('/Blogs')}>
+            <Icon name="book" />
+            {openMenu && 'Blogs'}
+          </StyledLi>
+        </Link>
       </StyledNavList>
     </StyledNav>
   );

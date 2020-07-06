@@ -18,6 +18,7 @@ const StyledNavTittle = styled.h1`
   background-color: ${(props) => props.theme.darkBlue};
   color: ${(props) => props.theme.white};
   transition: 300ms;
+  text-align: center;
 `;
 
 const StyledButton = styled.button`

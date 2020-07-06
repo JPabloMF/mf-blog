@@ -12,15 +12,12 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-
 function App() {
   return (
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <div className="App">
-          <Main />
-        </div>
+        <Main />
       </ThemeProvider>
     </>
   );
