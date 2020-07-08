@@ -2,13 +2,16 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 
+/* Components */
+import Home from '../../screens/home';
+
 const Wrapper = styled.div`
-  margin-left: ${(props) => props.openMenu ? '250px' : '70px'};
-  margin-top: 70px;
+  position: absolute;
+  left: ${(props) => (props.openMenu ? '250px' : '70px')};
+  top: 70px;
+  width: ${(props) => (props.openMenu ? 'calc(100% - 250px)' : 'calc(100% - 70px)')};
   transition: 300ms;
 `;
-
-const Home = () => <div>Home</div>;
 
 const Topics = () => <div>Topics</div>;
 
