@@ -14,6 +14,7 @@ const StyledContainer = styled.div`
   justify-items: center;
   font-size: 25px;
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const StyledPresentation = styled.div`
@@ -27,7 +28,6 @@ const StyledPresentation = styled.div`
     font-weight: bold;
     font-size: 60px;
     margin: 5px 0;
-    height: 70px;
     &:last-child {
       margin-bottom: 25px;
     }
@@ -52,7 +52,7 @@ const StyledTopics = styled.div`
   div {
     margin-top: 50px;
     color: ${(props) => props.theme.white};
-    font-size: 60px;
+    font-size: 50px;
   }
   .title {
     width: 50%;
@@ -79,8 +79,10 @@ const StyledContactme = styled.div`
     font-size: 30px;
     color: ${(props) => props.theme.black};
   }
-  color: ${(props) => props.theme.blue};
-  font-size: 40px;
+  a {
+    color: ${(props) => props.theme.blue};
+    font-size: 40px;
+  }
 `;
 
 const Home = (props) => {
@@ -112,10 +114,21 @@ const Home = (props) => {
       </StyledContainer>
       <StyledContactme>
         <p className="title">Contact me:</p>
-        <Icon name="twitter" />
-        <Icon name="linkedin" />
-        <Icon name="github" />
-        <Icon name="mail" />
+        <a href="https://twitter.com/_MFcoder_" target="__blank">
+          <Icon name="twitter" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/juan-pablo-mu%C3%B1oz-alvarez-a9719914b/"
+          target="__blank"
+        >
+          <Icon name="linkedin" />
+        </a>
+        <a href="https://github.com/JPabloMF" target="__blank">
+          <Icon name="github" />
+        </a>
+        {/* <a href="" target="__blank">
+          <Icon name="mail" />
+        </a> */}
       </StyledContactme>
     </StyledMainContainer>
   );

@@ -23,12 +23,12 @@ const SideBar = ({ openMenu }) => {
             {openMenu && 'Topics'}
           </StyledLi>
         </Link>
-        <Link to="/Blogs">
+        {/* <Link to="/Blogs">
           <StyledLi active={activeRoute('/Blogs')}>
             <Icon name="book" />
             {openMenu && 'Blogs'}
           </StyledLi>
-        </Link>
+        </Link> */}
       </StyledNavList>
     </StyledNav>
   );

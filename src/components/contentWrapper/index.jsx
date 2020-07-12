@@ -1,31 +1,20 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import styled from 'styled-components';
+import { Wrapper } from './styles';
 
-/* Components */
-import Home from '../../screens/home';
-
-const Wrapper = styled.div`
-  position: absolute;
-  left: ${(props) => (props.openMenu ? '250px' : '70px')};
-  top: 70px;
-  width: ${(props) => (props.openMenu ? 'calc(100% - 250px)' : 'calc(100% - 70px)')};
-  transition: 300ms;
-`;
-
-const Topics = () => <div>Topics</div>;
-
-const Blogs = () => <div>Blogs</div>;
+import { ROUTES } from '../../constants/routes';
 
 const NotFound = () => <div>404 Page not found</div>;
 
 const ContentWrapper = ({ openMenu }) => (
   <Wrapper openMenu={openMenu}>
     <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/Home" component={Home} />
-      <Route path="/Topics" component={Topics} />
-      <Route path="/Blogs" component={Blogs} />
+      {ROUTES.sections.map((section) => (
+        <Route path={section.route} exact component={section.component} />
+      ))}
+      {ROUTES.topics.map((topic) => (
+        <Route path={topic.route} exact component={topic.component} />
+      ))}
       <Route component={NotFound} />
     </Switch>
   </Wrapper>

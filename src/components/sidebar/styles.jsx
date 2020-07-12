@@ -6,7 +6,7 @@ const StyledNav = styled.nav`
   left: 0;
   bottom: 0;
   width: ${(props) => (props.openMenu ? '250px' : '70px')};
-  height: calc(100vh - 70px);
+  height: calc(100% - 70px);
   transition: 300ms;
 `;
 
