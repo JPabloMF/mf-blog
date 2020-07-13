@@ -37,6 +37,9 @@ const StyledPresentation = styled.div`
 `;
 
 const StyledTopics = styled.div`
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 600px;
   height: 500px;
   background-image: url(${blueShape});
