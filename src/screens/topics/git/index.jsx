@@ -1,14 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Git = (props) => {
-  return(
-  	<div>Git</div>
+import TopicHeader from '../../../components/topicHeader';
+
+import git from '../../../assets/logos/git.png';
+
+const Git = () => {
+  return (
+    <div>
+      <TopicHeader icon={git} name="git" />
+    </div>
   );
-};
-
-Git.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default Git;

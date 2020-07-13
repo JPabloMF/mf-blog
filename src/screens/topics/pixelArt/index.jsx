@@ -1,14 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PixelArt = (props) => {
-  return(
-  	<div>PixelArt</div>
+import TopicHeader from '../../../components/topicHeader';
+
+import pixelArtText from '../../../assets/logos/pixelarttext.png';
+
+const PixelArt = () => {
+  return (
+    <div>
+      <TopicHeader icon={pixelArtText} name="pixelart" />
+    </div>
   );
-};
-
-PixelArt.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default PixelArt;

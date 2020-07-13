@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
@@ -32,6 +33,10 @@ const SideBar = ({ openMenu }) => {
       </StyledNavList>
     </StyledNav>
   );
+};
+
+SideBar.propTypes = {
+  openMenu: PropTypes.bool.isRequired
 };
 
 export default SideBar;

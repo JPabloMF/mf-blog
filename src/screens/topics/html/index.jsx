@@ -1,14 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Html = (props) => {
-  return(
-  	<div>Html</div>
+import TopicHeader from '../../../components/topicHeader';
+
+import html from '../../../assets/logos/html.png';
+
+const Html = () => {
+  return (
+    <div>
+      <TopicHeader icon={html} name="html" />
+    </div>
   );
-};
-
-Html.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default Html;

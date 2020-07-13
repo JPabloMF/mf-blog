@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
+import PropTypes from 'prop-types';
 
 import { StyledHeader, StyledNavTittle, StyledButton } from './styles';
 
@@ -15,5 +16,11 @@ const ToolBar = ({ openMenu, setOpenMenu }) => {
     </StyledHeader>
   );
 };
+
+ToolBar.propTypes = {
+  openMenu: PropTypes.bool.isRequired,
+  setOpenMenu: PropTypes.func.isRequired,
+};
+
 
 export default ToolBar;

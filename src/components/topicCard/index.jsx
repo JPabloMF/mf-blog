@@ -21,7 +21,12 @@ const TopicCard = (props) => {
 };
 
 TopicCard.propTypes = {
-  props: PropTypes.object.isRequired,
+  props: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    route: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    bg: PropTypes.string.isRequired
+  }),
 };
 
 export default TopicCard;

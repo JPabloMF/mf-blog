@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Route, Switch } from 'react-router-dom';
 import { Wrapper } from './styles';
 
@@ -29,5 +30,9 @@ const ContentWrapper = ({ openMenu }) => (
     </Switch>
   </Wrapper>
 );
+
+ContentWrapper.propTypes = {
+  openMenu: PropTypes.bool.isRequired,
+};
 
 export default ContentWrapper;

@@ -1,14 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const English = (props) => {
-  return(
-  	<div>English</div>
+import TopicHeader from '../../../components/topicHeader';
+
+import english from '../../../assets/logos/english.png';
+
+const English = () => {
+  return (
+    <div>
+      <TopicHeader icon={english} name="english" />
+    </div>
   );
-};
-
-English.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default English;

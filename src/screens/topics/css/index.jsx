@@ -1,14 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import TopicHeader from '../../../components/topicHeader';
 
-const Css = (props) => {
-  return(
-  	<div>Css</div>
+import css from '../../../assets/logos/css.png';
+
+const Css = () => {
+  return (
+    <div>
+      <TopicHeader icon={css} name="css" />
+    </div>
   );
-};
-
-Css.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default Css;

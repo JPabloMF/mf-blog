@@ -1,14 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Javascript = (props) => {
-  return(
-  	<div>Javascript</div>
+import TopicHeader from '../../../components/topicHeader';
+
+import js from '../../../assets/logos/js.png';
+
+const Javascript = () => {
+  return (
+    <div>
+      <TopicHeader icon={js} name="Javascript" />
+    </div>
   );
-};
-
-Javascript.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default Javascript;

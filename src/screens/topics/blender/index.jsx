@@ -1,14 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Blender = (props) => {
-  return(
-  	<div>Blender</div>
+import TopicHeader from '../../../components/topicHeader';
+
+import blender from '../../../assets/logos/blender.png';
+
+const Blender = () => {
+  return (
+    <div>
+      <TopicHeader icon={blender} name="blender" />
+    </div>
   );
-};
-
-Blender.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default Blender;

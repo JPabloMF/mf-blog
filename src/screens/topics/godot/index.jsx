@@ -1,14 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
+import TopicHeader from '../../../components/topicHeader';
+
+import godot from '../../../assets/logos/godot.png';
 
 const Godot = (props) => {
-  return(
-  	<div>Godot</div>
+  return (
+    <div>
+      <TopicHeader icon={godot} name="godot" />
+    </div>
   );
-};
-
-Godot.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default Godot;

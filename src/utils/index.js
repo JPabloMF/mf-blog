@@ -25,4 +25,27 @@ const isMobile = {
   },
 };
 
-export { isMobile };
+const handleSelectBackgroundColor = (type, props) => {
+  switch (type.toLowerCase()) {
+    case 'html':
+      return props.orangeHTML;
+    case 'css':
+      return props.blueCSS;
+    case 'javascript':
+      return props.yellowJS;
+    case 'react':
+      return props.blueReact;
+    case 'git':
+      return props.white;
+    case 'godot':
+      return props.white;
+    case 'blender':
+      return props.white;
+    case 'english':
+      return props.white;
+    default:
+      return props.white;
+  }
+};
+
+export { isMobile, handleSelectBackgroundColor };

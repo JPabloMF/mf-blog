@@ -1,14 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const ReactComponent = (props) => {
-  return(
-  	<div>ReactComponent</div>
+import TopicHeader from '../../../components/topicHeader';
+
+import react from '../../../assets/logos/react.png';
+
+const ReactComponent = () => {
+  return (
+    <div>
+      <TopicHeader icon={react} name="react" />
+    </div>
   );
-};
-
-ReactComponent.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default ReactComponent;
