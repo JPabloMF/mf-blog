@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Icon } from 'semantic-ui-react';
 import styled from 'styled-components';
 
@@ -88,7 +87,7 @@ const StyledContactme = styled.div`
   }
 `;
 
-const Home = (props) => {
+const Home = () => {
   return (
     <StyledMainContainer>
       <StyledContainer>
@@ -135,10 +134,6 @@ const Home = (props) => {
       </StyledContactme>
     </StyledMainContainer>
   );
-};
-
-Home.propTypes = {
-  props: PropTypes.object.isRequired,
 };
 
 export default Home;
