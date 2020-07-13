@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 const StyledNav = styled.nav`
   background-color: ${(props) => props.theme.blue};
   position: fixed;
+  z-index: 2;
   left: 0;
   bottom: 0;
   width: ${(props) => (props.openMenu ? '250px' : '70px')};

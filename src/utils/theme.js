@@ -8,7 +8,7 @@ export const theme = {
   darkGrey: '#626262',
   blueReact: '#282c34',
   pinkSass: '#cc6699',
-  yellowJS: '#ffcc14',
+  yellowJS: '#e9ca32',
   orangeHTML: '#e54f27',
-  blueCSS: '#0172be',
+  blueCSS: '#006ebb',
 };

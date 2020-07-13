@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Sass = (props) => {
+const Blender = (props) => {
   return(
-  	<div>Sass</div>
+  	<div>Blender</div>
   );
 };
 
-Sass.propTypes = {
+Blender.propTypes = {
   props: PropTypes.object.isRequired
 };
 
-export default Sass;
+export default Blender;
