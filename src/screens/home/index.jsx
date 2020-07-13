@@ -60,6 +60,7 @@ const StyledTopics = styled.div`
     line-height: 0.1em;
     margin: 10px 0 20px;
     text-align: center;
+    margin-right: 60px;
   }
   .title span {
     background-color: ${(props) => props.theme.blue};
