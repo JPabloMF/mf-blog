@@ -11,14 +11,14 @@ const StyledMainContainer = styled.div`
 `;
 
 const StyledContainer = styled.div`
-  justify-items: center;
   font-size: 25px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 const StyledPresentation = styled.div`
-  width: 40%;
+  width: 600px;
   padding-left: 10%;
   padding-top: 10%;
   p {
@@ -38,7 +38,7 @@ const StyledPresentation = styled.div`
 `;
 
 const StyledTopics = styled.div`
-  width: 60%;
+  width: 600px;
   height: 500px;
   background-image: url(${blueShape});
   background-repeat: no-repeat;
@@ -66,6 +66,9 @@ const StyledTopics = styled.div`
     background-color: ${(props) => props.theme.blue};
     color: ${(props) => props.theme.white};
     padding: 0 10px;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
