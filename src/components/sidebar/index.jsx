@@ -15,10 +15,10 @@ const SideBar = ({ openMenu }) => {
   }, []);
 
   const activeRoute = (url) => {
-    if (url === 'Home' && currentUrl === '') {
+    if (url.includes('Home') && currentUrl === '') {
       return true;
     } else {
-      return currentUrl === url;
+      return currentUrl.includes(url);
     }
   };
 

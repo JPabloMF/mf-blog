@@ -33,6 +33,7 @@ const StyledLi = styled.li`
   ${(props) =>
     props.active
       ? css`
+          color: ${(props) => props.theme.white};
           background-color: ${(props) => props.theme.lightBlue};
           border-left: 5px solid ${(props) => props.theme.white};
         `
