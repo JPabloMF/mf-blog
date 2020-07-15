@@ -1,14 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const SectionHtml = (props) => {
-  return(
-  	<div>SectionHtml</div>
+import ArticleContainer from '../../../../../components/articleContainer';
+
+const SectionHtml = () => {
+  return (
+    <div>
+      <ArticleContainer title="test" date="01/01/01" name="MF Coder" />
+    </div>
   );
-};
-
-SectionHtml.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default SectionHtml;
